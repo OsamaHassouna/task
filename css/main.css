@@ -138,6 +138,11 @@ p{
   display: inline-block;
   width: 100%;
 }
+
+.banner1{
+  margin-bottom: 30px;
+}
+
 .banners div a img {
   width: 100%;
 }
@@ -439,8 +444,38 @@ aside li:first-child a{
 aside li:hover:not(:first-child){
   background: #e5e5e5;
 }
+
+@media (min-width: 768px){
+  .banners > div{
+    padding: 0px;
+  }
+}
 @media (max-width:991px){
   .categories-menu{
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider1{
+    margin-bottom: 20px;
+  }
+  .banners > div{
+    float: left;
+  }
+}
+@media (min-width:575px) and (max-width:768px){
+  .banner1{
+    margin-bottom: 0px;
+    padding-left: 0px;
+  }
+  .banner2{
+    padding-right: 0px;
+  }
+}
+@media (max-width: 576px) {
+  .banners > div{
+    padding: 0px;
+    /* float:none; */
   }
 }
