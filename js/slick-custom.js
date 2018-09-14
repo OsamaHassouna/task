@@ -136,9 +136,9 @@
             autoplay: true,
             autoplaySpeed: 3000,
             arrows: true,
-            appendArrows: $('.wrap-slick2'),
-            prevArrow:'<button class="arrow-slick2 prev-slick2"><i class="fa  fa-angle-left" aria-hidden="true"></i></button>',
-            nextArrow:'<button class="arrow-slick2 next-slick2"><i class="fa  fa-angle-right" aria-hidden="true"></i></button>'
+            appendArrows: $('.wrap-slick3'),
+            prevArrow:'<button class="arrow-slick3 prev-slick3"><i class="fa  fa-angle-left" aria-hidden="true"></i></button>',
+            nextArrow:'<button class="arrow-slick3 next-slick3"><i class="fa  fa-angle-right" aria-hidden="true"></i></button>'
         });
 
 

@@ -307,6 +307,29 @@ footer .links > div {
 .prev-slick2.slick-arrow{right: 30px;}
 .next-slick2.slick-arrow{right: 0px;}
 
+/* SLIDER 3 */
+.wrap-slick3{
+  position: relative;
+}
+.prev-slick3.slick-arrow,
+.next-slick3.slick-arrow{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: #c2c2c2;
+    position: absolute;
+    top: 25px;
+    line-height: 1;
+    cursor: pointer;
+}
+.prev-slick3.slick-arrow:hover,
+.next-slick3.slick-arrow:hover{
+  color: #e87528;
+}
+.prev-slick3.slick-arrow{right: 30px;}
+.next-slick3.slick-arrow{right: 0px;}
+
 /* PRODUCT */
 .product{
   text-align: center;
