@@ -451,6 +451,7 @@ aside li:hover:not(:first-child){
   }
 }
 @media (max-width:991px){
+  .menu,
   .categories-menu{
     display: none;
   }
