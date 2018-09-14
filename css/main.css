@@ -415,3 +415,27 @@ footer .links > div {
 .sort-search .search-ico:hover{
   color: #e87528
 }
+
+/* Categories Menu */
+aside li {
+  font-family: 'Roboto-Regular';
+  font-size: 16px;
+  color: #616161;
+  padding: 18px 30px;
+  border-bottom: 1px solid #fff;
+  background: #f2f2f2;
+  cursor: pointer;
+}
+aside li:first-child{
+  font-family: 'Roboto-Bold';
+  color: #fff;
+  background: #e87528;
+  cursor: pointer;
+  border: none;
+}
+aside li:first-child a{
+  color: #fff;
+}
+aside li:hover:not(:first-child){
+  background: #e5e5e5;
+}

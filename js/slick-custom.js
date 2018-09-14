@@ -86,7 +86,7 @@
         ===========================================================*/
         $('.slick2').slick({
             slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToScroll: 2,
             infinite: true,
             autoplay: true,
             autoplaySpeed: 3000,
