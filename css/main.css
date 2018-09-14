@@ -439,3 +439,8 @@ aside li:first-child a{
 aside li:hover:not(:first-child){
   background: #e5e5e5;
 }
+@media (max-width:991px){
+  .categories-menu{
+    display: none;
+  }
+}
