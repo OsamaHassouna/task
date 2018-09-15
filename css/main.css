@@ -238,7 +238,6 @@ footer h4{
   font-size: 16px;
   color: #515151;
   line-height: 1.2;
-  min-height: 40px;
 }
 footer li{
   font-family: 'Roboto-Light';
@@ -486,7 +485,11 @@ aside li:hover:not(:first-child){
     padding-top: 50%;
   }
 }
-
+@media (min-width: 768px){
+  footer h4{
+  min-height: 40px;
+  }
+}
 @media (max-width: 768px) {
   .slider1{
     margin-bottom: 20px;
@@ -500,6 +503,9 @@ aside li:hover:not(:first-child){
   }
   .rs2-select2{
     display: none;
+  }
+  .sort-search .search-bar{
+    width:100%;
   }
   .footer-main{
     text-align: center;
@@ -516,7 +522,7 @@ aside li:hover:not(:first-child){
     padding-top: 0px;
   }
 }
-@media (min-width:575px) and (max-width:768px){
+@media (min-width:575px) and (max-width:769px){
   .banner1{
     margin-bottom: 0px;
     padding-left: 0px;
@@ -539,9 +545,6 @@ aside li:hover:not(:first-child){
   .banners > div{
     padding: 0px;
     /* float:none; */
-  }
-  .sort-search .search-bar{
-    width:100%;
   }
   .footer-links .links{
     margin-bottom: 20px;
