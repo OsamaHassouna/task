@@ -153,8 +153,17 @@
             if ($('.js-off-canvas-exit').hasClass('is-visible')) {
                 $(".js-off-canvas-exit").toggleClass("is-visible");
               }
-          })
+        });
 
+        //fixed header
 
+        $(window).scroll(function(){
+            if ($(window).scrollTop() >= 150) {
+                $(".header").addClass('fixed-header');
+            }
+            else {
+                $(".header").removeClass('fixed-header');
+            }
+        });
 
 })(jQuery);
