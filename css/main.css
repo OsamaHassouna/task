@@ -471,7 +471,7 @@ aside li:hover:not(:first-child){
     min-height: 290px;
   }
 }
-@media (max-width:991px){
+@media (max-width:992px){
   .menu,
   .categories-menu{
     display: none;
