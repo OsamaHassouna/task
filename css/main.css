@@ -362,12 +362,6 @@ footer .links > div {
   -moz-transition: all 0.4s;
   cursor: pointer;
 }
-.item-slick2:hover .product h3 a {
-  color: #e87528;
-}
-.item-slick2:hover .product p {
-  color: #09a241;
-}
 .item-slick2:hover .product-image img {
   transform: scale(1.1);
   transition: all 0.4s;
