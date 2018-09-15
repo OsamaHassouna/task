@@ -767,9 +767,14 @@ aside li:hover:not(:first-child){
   .cart-price{
     display: none;
   }
+  .fixed-header .wrap_menu{padding-top: 10px;}
   .logo > a{
     margin: 0 auto;
     max-width: 130px;
+  }
+  .logo img,
+  .fixed-header .logo img{
+    max-width: 110px;
   }
   .banners > div{
     padding: 0px;
