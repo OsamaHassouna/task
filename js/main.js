@@ -133,7 +133,9 @@
             prevArrow:'<button class="arrow-slick3 prev-slick3"><i class="fa  fa-angle-left" aria-hidden="true"></i></button>',
             nextArrow:'<button class="arrow-slick3 next-slick3"><i class="fa  fa-angle-right" aria-hidden="true"></i></button>'
         });
+        /*===========================================================*/
 
+        /*  MOBILE MENU BUTTON  */
         $(".hamburger-box").click(function(e){
             e.stopPropagation();
             $('html, body').scrollTop(0);
@@ -148,25 +150,24 @@
                 $(".js-off-canvas-exit").toggleClass("is-visible");
               }
         });
+        /* ========================== */
 
+        /*  LANGUAGE ACTIVE  */
         $(".arabic").click(function(e){
             e.stopPropagation();
             e.preventDefault();
             $(".arabic").addClass('active');
-            if ($('.english').hasClass('active')) {
-                $(".english").removeClass('active');
-              }
+            $(".english").removeClass('active');
         });
         $(".english").click(function(e){
             e.stopPropagation();
             e.preventDefault();
             $(".english").addClass('active');
-            if ($('.arabic').hasClass('active')) {
-                $(".arabic").removeClass('active');
-              }
+            $(".arabic").removeClass('active');
         });
+        /* ========================== */
 
-        //fixed header
+        /*  FIXED HEADER  */
         $(window).scroll(function(){
             if ($(window).scrollTop() >= $('.container-header').height()) {
                 $(".header").addClass('fixed-header');
