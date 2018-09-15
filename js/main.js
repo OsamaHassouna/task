@@ -136,6 +136,7 @@
 
         $(".hamburger-box").click(function(e){
             e.stopPropagation();
+            $('html, body').scrollTop(0);
             $(".off-canvas-wrapper-inner").toggleClass("is-open-left");
             $(".js-off-canvas-exit").toggleClass("is-visible");
         });
@@ -151,17 +152,17 @@
         $(".arabic").click(function(e){
             e.stopPropagation();
             e.preventDefault();
+            $(".arabic").addClass('active');
             if ($('.english').hasClass('active')) {
                 $(".english").removeClass('active');
-                $(".arabic").addClass('active');
               }
         });
         $(".english").click(function(e){
             e.stopPropagation();
             e.preventDefault();
+            $(".english").addClass('active');
             if ($('.arabic').hasClass('active')) {
                 $(".arabic").removeClass('active');
-                $(".english").addClass('active');
               }
         });
 
