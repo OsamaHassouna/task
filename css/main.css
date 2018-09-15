@@ -140,6 +140,17 @@ p{
 .banners div a {
   display: inline-block;
   width: 100%;
+  overflow: hidden;
+}
+.banners a:hover img{
+  transform: scale(1.1);
+  transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+}
+.banners a:hover{
+  border-radius: 50%;
 }
 
 .banner1{
@@ -148,12 +159,32 @@ p{
 
 .banners div a img {
   width: 100%;
+  transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
 }
 .banner-solo a {
   width: 100%;
+  overflow: hidden;
+}
+.banner-solo a:hover{
+  border-radius: 50px;
+}
+.banner-solo a:hover img{
+  transform: scale(1.1);
+  opacity: 0.9;
+  transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
 }
 .banner-solo a img {
   width: 100%;
+  transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
 }
 
 /* ============== Banners ============== */
@@ -265,7 +296,6 @@ footer .links > div {
   position: absolute;
   z-index: 99;
   top: 50%;
-  margin-top: -50px;
   width: 32px;
   height: 32px;
   background: #fff;
@@ -288,6 +318,25 @@ footer .links > div {
 }
 .item-slick2{
   outline: none;
+  opacity: 0.5;
+  transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+.item-slick2:hover{
+  opacity: 1;
+  transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+.item-slick2:hover .product-image img {
+  transform: scale(1.1);
+  transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
 }
 .slider2-title{
   border-bottom: 1px solid #e87528;
@@ -353,11 +402,21 @@ footer .links > div {
   margin: 0 5px;
   height: 300px;
 }
+.product .product-image{
+  min-height: 140px;
+}
+.product .product-image a{
+  outline: none;
+}
 .product .product-image img{
   width: 100%;
   max-width: 70%;
   margin: 0 auto;
   max-height: 140px;
+  transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
 }
 .product h3{
   font-size: 14px;
@@ -545,6 +604,9 @@ aside li:hover:not(:first-child){
 }
 .is-active{
   background: #e4e4e4 !important;
+}
+.active{
+  opacity: 0.5;
 }
 
 /* MEDIA */
