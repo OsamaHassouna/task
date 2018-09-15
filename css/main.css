@@ -454,6 +454,9 @@ aside li:first-child a{
 aside li:hover:not(:first-child){
   background: #e5e5e5;
 }
+
+/* MEDIA */
+
 @media (max-width: 1050px){
   .menu li{
     padding: 10px 1.5%;
@@ -466,11 +469,6 @@ aside li:hover:not(:first-child){
     padding: 12% 30px;
     max-height:305px;
     min-height: 290px;
-}
-}
-@media (min-width: 768px){
-  .banners > div{
-    padding: 0px;
   }
 }
 @media (max-width:991px){
@@ -486,9 +484,12 @@ aside li:hover:not(:first-child){
   }
 }
 @media (min-width: 768px){
-  footer h4{
-  min-height: 40px;
+  .banners > div{
+    padding: 0px;
   }
+  footer h4{
+    min-height: 40px;
+    }
 }
 @media (max-width: 768px) {
   .slider1{
