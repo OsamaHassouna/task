@@ -360,6 +360,10 @@ footer .links > div {
 	-webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
+  cursor: pointer;
+}
+.item-slick2:hover .product h3 a {
+  color: #e87528;
 }
 .item-slick2:hover .product-image img {
   transform: scale(1.1);
