@@ -141,6 +141,20 @@
             nextArrow:'<button class="arrow-slick3 next-slick3"><i class="fa  fa-angle-right" aria-hidden="true"></i></button>'
         });
 
+        $(".hamburger-box").click(function(e){
+            e.stopPropagation();
+            $(".off-canvas-wrapper-inner").toggleClass("is-open-left");
+            $(".js-off-canvas-exit").toggleClass("is-visible");
+        });
+        $('body').click(function(e) {
+            if ($('.off-canvas-wrapper-inner').hasClass('is-open-left')) {
+              $(".off-canvas-wrapper-inner").toggleClass('is-open-left')
+            }
+            if ($('.js-off-canvas-exit').hasClass('is-visible')) {
+                $(".js-off-canvas-exit").toggleClass("is-visible");
+              }
+          })
+
 
 
 })(jQuery);

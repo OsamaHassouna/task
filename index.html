@@ -23,13 +23,23 @@
 <!--===============================================================================================-->
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="off-canvas-wrapper">
+        <div class="container-fluid off-canvas-wrapper-inner">
         <!-- Header -->
         <header class="header">
             <!-- Header desktop -->
             <div class="container-header">
                  <!-- Logo -->
-                 <div class="col-lg-3 col-sm-6 logo">
+                 <div class="flex-m col-lg-3 col-sm-6 logo">
+                     <!-- Button show menu -->
+                    <div class="btn-show-menu">
+                        <!-- Header Icon mobile -->
+                        <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </div>
+                    </div>
                     <a href="index.html">
                         <img src="images/logo.png" alt="IMG-LOGO">
                     </a>
@@ -86,6 +96,48 @@
                 </div>
             </div>
         </header>
+
+        <!-- Menu Mobile -->
+        <div class="wrap-side-menu off-canvas position-left" >
+            <nav class="side-menu">
+                <ul class="mobile-main-menu">
+                    <li class="item-menu-mobile">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="item-menu-mobile">
+                        <a href="#">Offers</a>
+                    </li>
+                    <li class="item-menu-mobile">
+                        <a href="#">Cooking Resipes</a>
+                    </li>
+                    <li class="item-menu-mobile">
+                        <a href="#">Food Tips</a>
+                    </li>
+                    <li class="item-menu-mobile">
+                        <a href="#">Contact</a>
+                    </li>
+                    <li class="item-menu-mobile">
+                        <a href="#">Categories</a>
+                        <ul class="mobile-categories-menu">
+                            <li><a href="#"> Food items</a></li>
+                            <li><a href="#">Milk and Cheese</a></li>
+                            <li><a href="#">Frozen Food</a></li>
+                            <li><a href="#">Bakery</a></li>
+                            <li><a href="#">Health and Beauty</a></li>
+                            <li><a href="#">Home care</a></li>
+                            <li><a href="#">Kids needs</a></li>
+                            <li><a href="#">Drinks</a></li>
+                            <li><a href="#">Sweets</a></li>
+                            <li><a href="#">Water</a></li>
+                            <li><a href="#">Vagetables and Fruit</a></li>
+                            <li><a href="#">Animals supplies</a></li>
+                            <li><a href="#">Others</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="js-off-canvas-exit"></div>
 
         <!-- Container SiderBar & Body -->
         <div class="container-sidebar m-b-30">
@@ -683,7 +735,8 @@
     </div>
 
     <!-- Container Selection -->
-	<div id="dropDownSelect2"></div>
+    <div id="dropDownSelect2"></div>
+    </div>
 
 <!-- =================== JQUERY ===================== -->
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
