@@ -89,6 +89,9 @@ p{
   float: left;
   padding: 0px;
 }
+.menu{
+  padding-right: 0px;
+}
 .menu,
 .menu-cart{
   float: left;
@@ -98,7 +101,7 @@ p{
 }
 .menu li{
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 2%;
 }
 .menu li a{
   text-transform: uppercase;
@@ -219,6 +222,9 @@ p{
 .feature-1{
   padding: 12.5% 30px;
 }
+.feature-1 > div{
+  width: 100%;
+}
 .feature-2{
   background: #e87528;
 }
@@ -235,6 +241,9 @@ footer h4{
 footer li{
   font-family: 'Roboto-Light';
   font-size: 14px;
+}
+.footer-links > div {
+  float: left;
 }
 footer .links > div {
   padding-top: 25%;
@@ -398,7 +407,7 @@ footer .links > div {
 /*  Search  */
 .sort-search .search-bar{
   float: left;
-  width: calc(100% - 160px);
+  width: calc(100% - 157px);
   position: relative;
 }
 .sort-search input.search {
@@ -444,6 +453,11 @@ aside li:first-child a{
 aside li:hover:not(:first-child){
   background: #e5e5e5;
 }
+@media (max-width: 1050px){
+  .menu li{
+    padding: 10px 1.5%;
+  }
+}
 
 @media (min-width: 768px){
   .banners > div{
@@ -455,6 +469,12 @@ aside li:hover:not(:first-child){
   .categories-menu{
     display: none;
   }
+  .feature-1{
+    margin-bottom: 20px;
+  }
+  footer .links > div{
+    padding-top: 50%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -463,6 +483,24 @@ aside li:hover:not(:first-child){
   }
   .banners > div{
     float: left;
+  }
+  .feature-2,
+  .feature-3{
+    margin-bottom: 20px;
+  }
+  .footer-main{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .footer-main .partners img{
+    margin: 0 auto;
+  }
+  .footer-links .links{
+    min-height: 180px;
+    margin-bottom: 10px;
+  }
+  .footer-links .links > div{
+    padding-top: 0px;
   }
 }
 @media (min-width:575px) and (max-width:768px){
@@ -475,8 +513,27 @@ aside li:hover:not(:first-child){
   }
 }
 @media (max-width: 576px) {
+  .container-header .logo,
+  .container-header .wrap_menu{
+    text-align: center;
+  }
+  .container-header .wrap_menu .topbar{
+    display: none;
+  }
+  .container-header .wrap_menu .menu-cart ul{
+    float:none;
+  }
   .banners > div{
     padding: 0px;
     /* float:none; */
+  }
+  .rs2-select2{
+    display: none;
+  }
+  .sort-search .search-bar{
+    width:100%;
+  }
+  .footer-links .links{
+    margin-bottom: 20px;
   }
 }
