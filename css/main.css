@@ -668,7 +668,8 @@ aside li:hover{
   width: 100%;
   border-bottom: 1px solid #fff;
 }
-.mobile-categories-menu li a:hover{
+.mobile-categories-menu1 li a:hover,
+.mobile-categories-menu2 li a:hover{
   background: #e4e4e4;
 }
 .is-active{
