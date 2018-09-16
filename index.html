@@ -19,7 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css">
 <!--=================== CUSTOM STYLE =====================-->
 	<link rel="stylesheet" type="text/css" href="css/util.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
 <body>
@@ -35,7 +35,7 @@
                         <div class="btn-show-menu">
                             <!-- Header Icon mobile -->
                             <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
-                                <span class="hamburger-box">
+                                <span class="hamburger-box mobile-menu">
                                     <span class="hamburger-inner"></span>
                                 </span>
                             </div>
@@ -114,9 +114,9 @@
                         <li class="item-menu-mobile">
                             <a href="#">Contact</a>
                         </li>
-                        <li class="item-menu-mobile">
+                        <li class="item-menu-mobile mobile-categories-subMenu">
                             <a href="#">Categories</a>
-                            <ul class="mobile-categories-menu">
+                            <ul class="mobile-categories-menu1">
                                 <li><a href="#"> Food items</a></li>
                                 <li><a href="#">Milk and Cheese</a></li>
                                 <li><a href="#">Frozen Food</a></li>
@@ -132,9 +132,9 @@
                                 <li><a href="#">Others</a></li>
                             </ul>
                         </li>
-                        <li class="item-menu-mobile">
+                        <li class="item-menu-mobile mobile-language-subMenu">
                             <a href="#">Language</a>
-                            <ul class="mobile-categories-menu">
+                            <ul class="mobile-categories-menu2">
                                 <li><a href="#" class="is-active">English</a></li>
                                 <li><a href="#">Arabic</a></li>
                             </ul>
@@ -149,8 +149,18 @@
                 <div class="col-3 categories-menu">
                     <!-- Categories Menu -->
                     <aside class="m-b-30">
-                        <ul>
-                            <li><a href="#">Categories</a></li>
+                        <div class="menu-title">
+                            <a href="#" class="menu-collapse-btn">
+                                Categories
+                            <!-- Button collapsing menu -->
+                             <div class="btn-slide">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                             </div>
+                            </a>
+                        </div>
+                        <ul class="categories-submenu">
                             <li><a href="#"> Food items</a></li>
                             <li><a href="#">Milk and Cheese</a></li>
                             <li><a href="#">Frozen Food</a></li>
@@ -779,7 +789,7 @@
 		});
 	</script>
 <!-- =================== CUSTOM JS =====================-->
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>

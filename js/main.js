@@ -136,7 +136,7 @@
         /*===========================================================*/
 
         /*  MOBILE MENU BUTTON  */
-        $(".hamburger-box").click(function(e){
+        $(".hamburger-box.mobile-menu").click(function(e){
             e.stopPropagation();
             $('html, body').scrollTop(0);
             $(".off-canvas-wrapper-inner").toggleClass("is-open-left");
@@ -177,6 +177,19 @@
                 $(".header").removeClass('fixed-header');
                 $(".header").addClass('fixed-header-remove');
             }
+        });
+
+        $(".menu-collapse-btn").click(function(e){
+            e.stopPropagation();
+            $(".categories-submenu").toggleClass("menu-slide");
+        });
+        $(".mobile-categories-subMenu").click(function(e){
+            e.stopPropagation();
+            $(".mobile-categories-menu1").toggleClass("mobile-categories-menu-slide");
+        });
+        $(".mobile-language-subMenu").click(function(e){
+            e.stopPropagation();
+            $(".mobile-categories-menu2").toggleClass("mobile-categories-menu-slide");
         });
 
 })(jQuery);
