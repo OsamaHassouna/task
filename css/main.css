@@ -291,7 +291,7 @@ p{
     -moz-transition: all 0.45s ease-in-out;
   }
   .banner1{
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   .banners div a img {
     width: 100%;
@@ -431,6 +431,8 @@ footer .links > div {
   border: none;
   outline: none;
   font-size: 20px;
+  color: #616161;
+  transition: all 0.3s ease-in-out;
 }
 .prev-slick1.slick-arrow:hover,
 .next-slick1.slick-arrow:hover{
@@ -476,10 +478,12 @@ footer .links > div {
   color: #fff;
   background: #e87528;
   display: inline-block;
-  padding: 16px 30px;
+  padding: 15px 30px;
   margin: 0;
   line-height: 1.2;
 }
+.prev-slick3.slick-arrow,
+.next-slick3.slick-arrow,
 .prev-slick2.slick-arrow,
 .next-slick2.slick-arrow{
     background: none;
@@ -491,36 +495,29 @@ footer .links > div {
     top: 15px;
     line-height: 1;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 .prev-slick2.slick-arrow:hover,
-.next-slick2.slick-arrow:hover{
+.next-slick2.slick-arrow:hover,
+.prev-slick3.slick-arrow:hover,
+.next-slick3.slick-arrow:hover{
   color: #e87528;
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
 }
-.prev-slick2.slick-arrow{right: 30px;}
-.next-slick2.slick-arrow{right: 0px;}
+.prev-slick3.slick-arrow,
+.prev-slick2.slick-arrow{
+  right: 30px;
+}
+.next-slick3.slick-arrow,
+.next-slick2.slick-arrow{
+  right: 0px;
+}
 
 /* -------- Slider3 -------- */
 .wrap-slick3{
   position: relative;
 }
-.prev-slick3.slick-arrow,
-.next-slick3.slick-arrow{
-    background: none;
-    border: none;
-    outline: none;
-    font-size: 20px;
-    color: #c2c2c2;
-    position: absolute;
-    top: 15px;
-    line-height: 1;
-    cursor: pointer;
-}
-.prev-slick3.slick-arrow:hover,
-.next-slick3.slick-arrow:hover{
-  color: #e87528;
-}
-.prev-slick3.slick-arrow{right: 30px;}
-.next-slick3.slick-arrow{right: 0px;}
 
 .body-sections .mobile-only{
   display: none;
@@ -575,11 +572,11 @@ footer .links > div {
   border: none;
 }
 .product-user-features li a{
-  transition: 0.5s all;
+  transition: 0.3s all;
 }
 .product-user-features li a:hover{
   transform: scale(1.3);
-  transition: 0.5s all;
+  transition: 0.3s all;
 }
 /* ============== SELECT2 ============== */
 .rs2-select2 {
