@@ -426,6 +426,10 @@ footer .links > div {
 .prev-slick3.slick-arrow{right: 30px;}
 .next-slick3.slick-arrow{right: 0px;}
 
+.body-sections .mobile-only{
+  display: none;
+}
+
 /* ============== PRODUCt ============== */
 .product{
   text-align: center;
@@ -734,6 +738,9 @@ aside li:hover{
   footer .links > div{
     padding-top: 50%;
   }
+  .body-sections .mobile-only{
+    display: block;
+  }
 }
 @media (min-width: 768px){
   .banners > div{
@@ -804,7 +811,7 @@ aside li:hover{
     margin: 0 auto;
     max-width: 130px;
   }
-  .logo img,
+  .header .logo img,
   .fixed-header .logo img{
     max-width: 110px;
   }
