@@ -626,11 +626,8 @@ footer .links > div {
   color: #e87528
 }
 /* ============== Categories Menu ============== */
-aside .menu-title{
-  background: #000;
-  cursor: pointer;
-}
-aside .menu-title a{
+
+aside .menu-title > a{
   width: 100%;
   background: #e87528;
   font-family: 'Roboto-Bold';
@@ -638,6 +635,7 @@ aside .menu-title a{
   padding: 18px 30px;
   color: #fff;
   position: relative;
+  text-transform: uppercase;
 }
 .btn-slide{
   position: absolute;
@@ -650,7 +648,7 @@ aside .menu-title a{
   background-color: #fff;
   width: 35px;
 }
-.menu-title:hover a {
+.menu-title:hover > a {
   opacity: 0.9;
 }
 .mobile-categories-menu,
@@ -665,16 +663,21 @@ aside .menu-title a{
 }
 
 aside li {
-  font-family: 'Roboto-Regular';
-  font-size: 16px;
-  color: #616161;
-  padding: 18px 30px;
   border-bottom: 1px solid #fff;
   background: #f2f2f2;
-  cursor: pointer;
 }
-aside li:hover{
+aside li a{
+  font-family: 'Roboto-Regular';
+  font-size: 16px;
+  padding: 18px 30px;
+  color: #616161;
+  width: 100%;
+  background: #f2f2f2;
+  line-height: 1.2;
+}
+aside li a:hover{
   background: #e5e5e5;
+  color: #616161;
 }
 
 /* -------- Mobile Menu Icon -------- */
@@ -940,4 +943,40 @@ aside li:hover{
   .logo > a{
     margin: 0 80px 0 70px;
   }
+}
+
+/***/
+@-webkit-keyframes slideDown {
+  from {
+    -webkit-transform: translate3d(0, -25px, 0);
+    transform: translate3d(0, -25px, 0);
+    /* visibility: visible; */
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    -webkit-transform: translate3d(0, -25px, 0);
+    transform: translate3d(0, -25px, 0);
+    /* visibility: visible; */
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.slideDown {
+  -webkit-animation-name: slideDown;
+  animation-name: slideDown;
 }

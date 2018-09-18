@@ -14,7 +14,9 @@
 <!--=================== HAMBURGERS =====================-->
     <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
 <!--=================== animsition =====================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--=================== animate =====================-->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 <!--=================== SELECT2 =====================-->
     <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
 <!--=================== SLICK =====================-->
@@ -162,22 +164,22 @@
                                 </span>
                              </div>
                             </a>
+                            <ul class="categories-submenu">
+                                <li class="wow slideDown" data-wow-duration="1s" data-wow-delay="0s"><a href="#">Food items</a></li>
+                                <li class="wow slideDown" data-wow-duration="1s" data-wow-delay="0.2s"><a href="#">Milk and Cheese</a></li>
+                                <li class="wow slideDown" data-wow-duration="1s" data-wow-delay="0.4s"><a href="#">Frozen Food</a></li>
+                                <li class="wow slideDown" data-wow-duration="1s" data-wow-delay="0.6s"><a href="#">Bakery</a></li>
+                                <li class="wow slideDown" data-wow-duration="1s" data-wow-delay="0.8s"><a href="#">Health and Beauty</a></li>
+                                <li class="wow slideDown" data-wow-duration="1s" data-wow-delay="1s"><a href="#">Home care</a></li>
+                                <li class="wow slideDown" data-wow-duration="1s" data-wow-delay="1.2s"><a href="#">Kids needs</a></li>
+                                <li class="wow slideDown" data-wow-duration="1s" data-wow-delay="1.4s"><a href="#">Drinks</a></li>
+                                <li class="wow slideDown" data-wow-duration="1s" data-wow-delay="1.6s"><a href="#">Sweets</a></li>
+                                <li class="wow slideDown" data-wow-duration="1s" data-wow-delay="1.8s"><a href="#">Water</a></li>
+                                <li class="wow slideDown" data-wow-duration="1s" data-wow-delay="2s"><a href="#">Vagetables and Fruit</a></li>
+                                <li class="wow slideDown" data-wow-duration="1s" data-wow-delay="2.2s"><a href="#">Animals supplies</a></li>
+                                <li class="wow slideDown" data-wow-duration="1s" data-wow-delay="2.4s"><a href="#">Others</a></li>
+                            </ul>
                         </div>
-                        <ul class="categories-submenu">
-                            <li><a href="#"> Food items</a></li>
-                            <li><a href="#">Milk and Cheese</a></li>
-                            <li><a href="#">Frozen Food</a></li>
-                            <li><a href="#">Bakery</a></li>
-                            <li><a href="#">Health and Beauty</a></li>
-                            <li><a href="#">Home care</a></li>
-                            <li><a href="#">Kids needs</a></li>
-                            <li><a href="#">Drinks</a></li>
-                            <li><a href="#">Sweets</a></li>
-                            <li><a href="#">Water</a></li>
-                            <li><a href="#">Vagetables and Fruit</a></li>
-                            <li><a href="#">Animals supplies</a></li>
-                            <li><a href="#">Others</a></li>
-                        </ul>
                     </aside>
 
                     <!-- Slider -->
@@ -317,7 +319,7 @@
                 <div class="body-sections col-lg-9 col-md-12 col-sm-12">
                     <!-- Select2 Search and Sorting -->
                     <div class="sort-search col-md-12 m-b-25">
-                        <div class="rs2-select2">
+                        <div class="rs2-select2 wow slideInLeft">
                             <select class="selection-2" name="sorting">
                                 <option>Categories</option>
                                 <option>Food items</option>
@@ -335,7 +337,7 @@
                                 <option>Others</option>
                             </select>
                         </div>
-                        <div class="search-bar">
+                        <div class="search-bar wow slideInRight">
                             <input type="text" class="search" placeholder="Search" >
                             <a href="#" class="search-ico">
                                 <i class="fa fa-search "></i>
@@ -345,8 +347,8 @@
                     </div>
 
                     <!-- Slider and Banners -->
-                    <div class="section-1 m-b-20 col-">
-                        <div class="slider1 col-md-8">
+                    <div class="section-1 m-b-20">
+                        <div class="slider1 col-md-8 wow slideInUp">
                             <div class="wrap-slick1">
                                 <div class="slick1">
                                     <div class="item-slick1">
@@ -368,12 +370,12 @@
                             </div>
                         </div>
                         <div class="banners col-md-4">
-                            <div class="col-sm-6 col-md-12 banner1 m-b-25">
+                            <div class="col-sm-6 col-md-12 banner1 m-b-25 wow fadeInUp">
                                 <a href="#">
                                     <img src="images/deal-of-week.png" alt="Deal of The week">
                                 </a>
                             </div>
-                            <div class="col-sm-6 col-md-12 banner2">
+                            <div class="col-sm-6 col-md-12 banner2 wow fadeInDown" >
                                 <a href="#">
                                     <img src="images/drinking-water.png" alt="Drinking Water">
                                 </a>
@@ -709,7 +711,7 @@
                     </div>
 
                     <!-- Banner -->
-                    <div class="banner-solo col-12">
+                    <div class="banner-solo col-12 wow slideInRight" data-wow-duration="1s">
                         <a href="#">
                             <img src="images/fresh-bakery.png" alt="Shop Now">
                         </a>
@@ -918,14 +920,19 @@
     </div>
 
 <!-- =================== JQUERY ===================== -->
-<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <!-- =================== BOOTSTRAP ===================== -->
-<script type="text/javascript" src="vendor/bootstrap/js/popper.min.js"></script>
-<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--=================== ANIMSITION =====================-->
-<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+    <script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+<!-- =================== WOW =====================-->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 <!-- =================== SLICK =====================-->
-	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
 <!-- =================== SELECT2 =====================-->
 	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
 	<script type="text/javascript">

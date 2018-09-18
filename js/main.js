@@ -247,14 +247,17 @@
     ===========================================================*/
     $(".menu-collapse-btn").click(function(e){
         e.stopPropagation();
+        e.preventDefault();
         $(".categories-submenu").toggleClass("menu-slide");
     });
     $(".mobile-categories-subMenu").click(function(e){
         e.stopPropagation();
+        e.preventDefault();
         $(".mobile-categories-menu1").toggleClass("mobile-categories-menu-slide");
     });
     $(".mobile-language-subMenu").click(function(e){
         e.stopPropagation();
+        e.preventDefault();
         $(".mobile-categories-menu2").toggleClass("mobile-categories-menu-slide");
     });
 
