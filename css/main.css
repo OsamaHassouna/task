@@ -944,39 +944,3 @@ aside li a:hover{
     margin: 0 80px 0 70px;
   }
 }
-
-/***/
-@-webkit-keyframes slideDown {
-  from {
-    -webkit-transform: translate3d(0, -25px, 0);
-    transform: translate3d(0, -25px, 0);
-    /* visibility: visible; */
-    opacity: 0;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideDown {
-  from {
-    -webkit-transform: translate3d(0, -25px, 0);
-    transform: translate3d(0, -25px, 0);
-    /* visibility: visible; */
-    opacity: 0;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-.slideDown {
-  -webkit-animation-name: slideDown;
-  animation-name: slideDown;
-}
