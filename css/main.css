@@ -281,7 +281,7 @@ p{
   .banners div a {
     display: inline-block;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   .banners a:hover img{
     transform: scale(1.1);
@@ -299,6 +299,24 @@ p{
     -webkit-transition: all 0.45s ease-in-out;
     -o-transition: all 0.45s ease-in-out;
     -moz-transition: all 0.45s ease-in-out;
+  }
+  .banners > div{
+    overflow: hidden;
+  }
+  .banners a:before {
+    width: 100%;
+    z-index: 9;
+    content: "";
+    position: absolute;
+    height: 100%;
+    background: #000;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    transition: all 0.5s ease-in-out;
+  }
+  .banners a:hover:before {
+    opacity: 0;
   }
   .banner-solo a {
     width: 100%;
